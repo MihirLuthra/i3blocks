@@ -35,6 +35,10 @@ separator_block_width=30
 # The second parameter overrides the mixer selection
 # See the script for details.
 
+[brightness]
+command=./brightness/bin/brightness -a /sys/class/backlight/intel_backlight/actual_brightness -m /sys/class/backlight/intel_backlight/max_brightness
+interval=persist
+
 [volume]
 interval=1
 signal=10
