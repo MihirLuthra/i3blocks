@@ -100,7 +100,7 @@ format=json
 # The battery instance defaults to 0.
 [battery]
 label=BAT
-interval=30
+interval=5
 
 # Generic media player support
 #
