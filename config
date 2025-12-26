@@ -48,6 +48,10 @@ interval=13
 interval=15
 signal=10
 
+[updates]
+label=UPDATES
+command=apt list --upgradable 2>/dev/null | grep -v Listing | wc -l
+interval=300
 
 # Memory usage
 #
@@ -146,6 +150,6 @@ interval=5
 #interval=once
 #signal=11
 
-[wifi]
-INTERFACE=wlp0s20f3
-interval=10
+#[wifi]
+#INTERFACE=wlp0s20f3
+#interval=10
